@@ -1,5 +1,5 @@
 /////////// Prompt 1 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function findMax(array){
   var max = -Infinity;
   for (var i = 0; i < array.length; i++){
@@ -12,21 +12,21 @@ function findMax(array){
 
 
 /////////// Prompt 2 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function contains(array, target){
   return array.indexOf(target) > -1;
 }
 
 
 /////////// Prompt 3 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function partialContains(array, target, start){
   return array.slice(start).indexOf(target) > -1;
 }
 
 
 /////////// Prompt 4 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function square(array){
   for (var i = 0; i < 3; i++){
     array[i] = array[i] * array[i];
@@ -35,7 +35,7 @@ function square(array){
 }
 
 /////////// Prompt 5 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function repeat(array){
   var repeat = [];
   for (var j = 0; j < 10; j++){
@@ -50,7 +50,7 @@ function repeat(array){
 
 
 /////////// Prompt 6 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 function gcf(num1, num2){
   if (num1 > num2){ //this ensures num1 is the smaller number
     var temp = num1;
@@ -67,7 +67,7 @@ function gcf(num1, num2){
 
 
 /////////// Prompt 7 ///////////
-/////////// time complexity: 
+/////////// time complexity: n^2
 function countChar(string){
   var counts = {};
   var currChar, currCharCount;
@@ -88,7 +88,7 @@ function countChar(string){
 
 
 /////////// Prompt 8 ///////////
-/////////// time complexity: 
+/////////// time complexity: linear
 var factorial = function(num){
   if (num < 0){
     return;
@@ -102,7 +102,7 @@ var factorial = function(num){
 
 
 /////////// Prompt 9 ///////////
-/////////// time complexity: 
+/////////// time complexity: logorithmic
 function tournament(players){
   var results;
   if (players.length < 3){
@@ -121,7 +121,7 @@ function tournament(players){
 
 
 /////////// Prompt 10 ///////////
-/////////// time complexity: 
+/////////// time complexity: O(c^n) where c = allowedChars.length, n = max length
 function allPasswords(allowedChars, maxLength){
   var results = [];
 
